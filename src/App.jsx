@@ -68,9 +68,9 @@ function App(){
             <Header />
             <Routes>
                 <Route path="/" element={<Home />} />
-                <Route path="/:mediaType/:id" Component={<Details />} />
-                <Route path="/search/:query" Component={<SearchResult />} />
-                <Route path="/explore/:mediaType" Component={<Explore />} />
+                <Route path="/:mediaType/:id" element={<Details />} />
+                <Route path="/search/:query" element={<SearchResult />} />
+                <Route path="/explore/:mediaType" element={<Explore />} />
                  
             </Routes>
             <Footer />
